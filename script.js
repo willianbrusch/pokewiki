@@ -8,6 +8,12 @@ search.addEventListener('click', () => {
    let pokemon = document.getElementById('pokemon').value
    let url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`
 
+   if (pokemon > 807) {
+      header.innerHTML = ""
+      aside.innerHTML = ""
+      footer.innerHTML = ""
+   }
+
    fetch(url)
       .then(response => { return response.json() })
       .then(data => {

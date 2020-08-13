@@ -159,3 +159,7 @@ body {
 .specialAttack, .specialDefense, .speed {
     margin: 2px;
 }
+
+#pokemon {
+    width: 200px;
+}
